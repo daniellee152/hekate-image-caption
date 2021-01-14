@@ -1,0 +1,8 @@
+uvicorn
+fastapi
+pillow
+numpy
+pandas
+deepface
+openpyxl
+python-multipart
