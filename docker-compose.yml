@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  image_caption:
+    container_name: image-cation
+    image: khanh41/image-caption:0.1
+    ports:
+      - "8088:80"
+    restart: on-failure
+

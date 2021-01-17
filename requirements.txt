@@ -3,6 +3,10 @@ fastapi
 pillow
 numpy
 pandas
-deepface
 openpyxl
 python-multipart
+tqdm
+gdown
+tensorflow
+mtcnn
+opencv-python
