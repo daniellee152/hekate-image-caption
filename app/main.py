@@ -1,3 +1,5 @@
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 # 1. Library imports
 import uvicorn
 from fastapi import FastAPI, File, UploadFile
@@ -7,7 +9,7 @@ import pandas as pd
 
 # 2. Create the app object
 app = FastAPI()
-df = pd.read_excel("./data/Caption.xlsx", sheet_name=[1, 2, 3, 4], header=None)
+df = pd.read_excel("./data/Caption.xlsx", sheet_name=[1, 2, 3, 4], header=None, engine="openpyxl")
 
 
 @app.get("/")
